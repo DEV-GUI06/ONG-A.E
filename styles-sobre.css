@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f0ffe9;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: relative;
+}
+
+header nav .logo-nav {
+  text-align: center;
+  width: 60px;
+  border-radius: 20%;
+}
+
+header {
+  background: #43a117;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav h1 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+nav ul li a:hover {
+  color: #83ff83;
+}
+
+#sobre h1 {
+  text-align: center;
+}
+
+.sobre-item {
+  display: flex;
+  text-align: center;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
+
+.sobre-item img {
+  width: 90%;
+  max-width: 472px;
+  border-radius: 5px;
+}
+
+.sobre-item .texto {
+  margin-left: 1rem;
+  max-width: 60%;
+  text-align: justify;
+}
+
+#parceiros {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#parceiros .texto {
+  margin-bottom: 30px;
+}
+
+#parceiros h2 {
+  text-align: center;
+  padding-top: 2rem;
+}
+#parceiros .texto{
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#parceiros .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+#parceiros .card {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: 0.3s;
+
+}
+#parceiros .card:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#parceiros .card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+
+
+.linha-separadora {
+  align-items: center;  width: 80%;  height: 4px;
+  background-color: #43a117;
+  border-radius: 8px;
+  margin: 5rem auto;
+
+}
+
+footer {
+  background: #43a117;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .logo-footer {
+  width: 100px;
+  height: auto;
+  border-radius: 10%;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav ul {
+    align-items: center;
+    gap: 1px;
+    margin-top: 1rem
+  }
+  nav ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .sobre-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .sobre-item .texto {
+    font-size: 0.8rem;
+    max-width: none;
+  }
+
+  #parceiros .texto{
+    font-size: 0.8rem;
+  }
+
+  .logo-nav {
+    margin-top: 1rem;
+  }
+}
