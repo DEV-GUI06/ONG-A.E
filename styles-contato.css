@@ -58,52 +58,7 @@ nav ul li a:hover {
   color: #83ff83;
 }
 
-/* Linha do tempo */
-.linha-do-tempo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-  .linha-do-tempo h1 {
-    margin-top: 10rem;
-  }
-  
-  .linha-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-  
-  .linha-item img {
-    width: 100%;
-    max-width: 150px;
-    border-radius: 50%;
-    margin: 0 1rem;
-  }
-  
-  .linha-item .titulo-direita {
-    max-width: 100%;
-    text-align: center;
-    margin-left: 0;
-  }
-  
-  .linha-item .texto-esquerda {
-    max-width: 100%;
-    text-align: center;
-    margin-right: 0;
-  }
-  
-  /* Linha vertical */
-  .linha-vertical {
-    width: 4px;
-    height: 100px;
-    background-color: #43a117;
-    margin: 1rem 0;
-    border-radius: 8px;
-  }
+
   
   
   footer {
