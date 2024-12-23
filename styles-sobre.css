@@ -69,11 +69,17 @@ nav ul li a:hover {
   flex-wrap: wrap;
 }
 
-.sobre-item img {
+.sobre-item .img {
+  width: 100%;
+  max-width: 472px;
+  border-radius: 5px;
+}
+.sobre-item .img img {
   width: 90%;
   max-width: 472px;
   border-radius: 5px;
 }
+
 
 .sobre-item .texto {
   margin-left: 1rem;
