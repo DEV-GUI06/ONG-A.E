@@ -7,6 +7,10 @@ body {
   background-color: #f0ffe9;
 }
 
+p, h1, h2:hover{
+  transition: 0.3s;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -136,6 +140,33 @@ nav ul li a:hover {
   margin: 5rem auto;
 
 }
+
+#text-controls {
+  position: fixed;
+  top: 85%;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+#text-controls button {
+  background-color: #43a117;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#text-controls button:hover {
+  background-color: #43a117;
+  transform: scale(1.1);
+}
+
 
 footer {
   background: #43a117;
