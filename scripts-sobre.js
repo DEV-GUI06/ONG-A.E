@@ -7,7 +7,7 @@ const increaseButton = document.getElementById("increase-text");
 
 // Limites de tamanho de fonte (em pixels)
 const MIN_FONT_SIZE = 12;
-const MAX_FONT_SIZE = 32;
+const MAX_FONT_SIZE = 27;
 
 // Função para alterar o tamanho da fonte
 function adjustFontSize(factor) {
