@@ -7,7 +7,9 @@ body {
   background-color: #f0ffe9;
 }
 
-p, h1, h2:hover{
+p,
+h1,
+h2:hover {
   transition: 0.3s;
 }
 
@@ -58,48 +60,111 @@ nav ul li a:hover {
   color: #83ff83;
 }
 
+.title{
+  text-align: center;
+}
 
-  
-  
-  footer {
-    background: #43a117;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
-  footer .footer-content {
-    display: flex;
+/* Estilização do contêiner principal */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.container img {
+  width: 30%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização dos ícones de mídia social */
+.social-media ul {
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.social-media ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: transform 0.2s ease-in-out, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-media ul li a img {
+  width: 40px;
+  height: 4s0px;
+  transition: transform 0.3s ease;
+}
+
+.social-media ul li a:hover {
+  color: #43a117;
+  transform: scale(1.1);
+}
+
+.social-media ul li a img:hover {
+  transform: scale(1.2);
+}
+
+
+footer {
+  background: #43a117;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .logo-footer {
+  width: 100px;
+  height: auto;
+  border-radius: 10%;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: column;
+  }
+
+  nav ul {
     align-items: center;
-    gap: 1rem;
+    gap: 1px;
+    margin-top: 1rem;
   }
-  
-  footer .logo-footer {
-    width: 100px;
-    height: auto;
-    border-radius: 10%;
+  nav ul li {
+    margin-bottom: 0.5rem;
   }
-  
-  @media (max-width: 768px) {
-    header nav {
-      flex-wrap: wrap;
-      justify-content: center;
-      flex-direction: column;
-    }
-  
-    nav ul {
-      align-items: center;
-      gap: 1px;
-      margin-top: 1rem
-    }
-    nav ul li {
-      margin-bottom: 0.5rem;
-    }
-  
-    .logo-nav {
-      margin-top: 1rem;
-    }
+
+  .logo-nav {
+    margin-top: 1rem;
   }
-  
-  
+  .container {
+    gap: 1.5rem;
+  }
+
+  .container img {
+    width: 50%;
+  }
+
+  .social-media ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
