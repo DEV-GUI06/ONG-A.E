@@ -201,11 +201,9 @@ footer .logo-footer {
     align-items: center;
   }
 
-  .sobre-item .img {
-    margin-right: 20px; /* Ajuste o valor conforme necessário */
-  }
   .sobre-item .texto {
     flex: 1;
+    margin-left: 1rem;
   }
 }
 
