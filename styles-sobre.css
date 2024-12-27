@@ -56,9 +56,9 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #83ff83;
-}
+} 
 
-#sobre h1 {
+h1{
   text-align: center;
 }
 
@@ -194,7 +194,22 @@ footer .logo-footer {
   border-radius: 10%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1284px) and (min-width: 950px) {
+  .sobre-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .sobre-item .img {
+    margin-right: 20px; /* Ajuste o valor conforme necessário */
+  }
+  .sobre-item .texto {
+    flex: 1;
+  }
+}
+
+@media (max-width: 949px) {
   header nav {
     flex-wrap: wrap;
     justify-content: center;
