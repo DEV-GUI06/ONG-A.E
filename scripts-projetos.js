@@ -25,3 +25,27 @@ function adjustFontSize(factor) {
 // Eventos de clique nos botões
 decreaseButton.addEventListener("click", () => adjustFontSize(-2));
 increaseButton.addEventListener("click", () => adjustFontSize(2));
+
+
+// Função para movimentar o carousel
+let currentIndex = 0;
+
+function moveCarousel(direction) {
+  const carousel = document.querySelector('.carousel');
+  const items = document.querySelectorAll('.carousel-item');
+  const totalItems = items.length;
+
+  // Atualizar índice
+  currentIndex += direction;
+
+  // Ajustar índice para looping
+  if (currentIndex < 0) {
+    currentIndex = totalItems - 1;
+  } else if (currentIndex >= totalItems) {
+    currentIndex = 0;
+  }
+
+  // Mover o carousel
+  const offset = -currentIndex * 100;
+  carousel.style.transform = `translateX(${offset}%)`;
+}

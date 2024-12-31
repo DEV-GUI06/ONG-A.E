@@ -58,6 +58,108 @@ nav ul li a:hover {
   color: #83ff83;
 }
 
+#nossas-acoes {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+#nossas-acoes h2 {
+  text-align: center;
+}
+#nossas-acoes .texto {
+  text-align: justify;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.cards-container {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #188821;
+  color: white;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 70%;
+  width: 35%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.card:hover img{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.card:hover p, h2{
+  transform: scale(1,1.1);
+  transition: 0.3s;
+}
+
+#nossas-atividades {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#nossas-atividades h2 {
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 50%;
+  border-radius: 10px;
+}
+.carousel-item p{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(24, 136, 33, 0.5);
+  color: #188821;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
 /* Linha do tempo */
 .linha-do-tempo {
     display: flex;
@@ -116,7 +218,7 @@ nav ul li a:hover {
     z-index: 1000;
   }
   #text-controls button {
-    background-color: #43a117;
+    background-color: #188821;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -171,6 +273,34 @@ nav ul li a:hover {
     .logo-nav {
       margin-top: 1rem;
     }
+     /* Ajustes no Carousel */
+  .carousel-container {
+    width: 100%;
+    padding: 0 10px; /* Adicione espaçamento interno */
   }
-  
+
+  .carousel-item img {
+    width: 80%; /* Reduz a largura das imagens */
+  }
+
+  .carousel-item p {
+    font-size: 1rem; /* Texto menor */
+  }
+
+  .carousel-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .carousel-button.prev {
+    left: 10px; /* Ajuste a posição */
+  }
+
+  .carousel-button.next {
+    right: 10px; /* Ajuste a posição */
+  }
+
+
+}
   
