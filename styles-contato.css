@@ -5,7 +5,95 @@ body {
   padding: 0;
   line-height: 1.6;
   background-color: #f0ffe9;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+body.light-theme {
+  background-color: #f0ffe9;
+  color: #000;
+}
+body.dark-theme {
+  background-color: #0d2a00; /* Cor para o tema escuro */
+  color: #fff;
+  .carousel-button {
+    background-color: #beeaab;
+    color: #0d2a00;
+  }
+  header,
+  footer {
+    background-color: #021800;
+  }
+  #text-controls button {
+    background-color: #a1e384;
+    color: #000;
+  }
+  .social-media ul li a {
+    color: #fff;
+  }
+  .vakinha-section h2 {
+    color: #fff;
+  }
+  .vakinha-section p {
+    color: #fff;
+  }
+}
+
+#theme-toggle-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 15px;
+  z-index: 1000;
+}
+#theme-toggle-container p {
+  margin-right: 10px;
+  font-size: 16px;
+  
+  font-weight: bold;
+  color: #1f6100;
+  transition: color 0.3s ease;
+}
+
+body.light-theme #theme-toggle-container p {
+  color: #1f6100;
+}
+body.dark-theme #theme-toggle-container p {
+  color: #c6ffc3;
+}
+
+#theme-toggle {
+  background-color: #1f6100;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 43px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  font-size: 30px;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.1);
+}
+#theme-toggle .sun {
+  color: #f9d71c;
+}
+
+#theme-toggle .moon {
+  color: #c3c3ff;
+}
+
+/* Animações */
+.icon {
+  opacity: 1;
+}
+
+.icon[style*="display: none"] {
+  opacity: 0;
+}
+
 
 p,
 h1,
@@ -36,7 +124,6 @@ header {
 nav h1 {
   margin: 0;
   padding: 0;
-  color: #fff;
   font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
 }
 
@@ -54,10 +141,26 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  position: relative;
   transition: 0.2s ease-in-out;
 }
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Ajuste a distância entre a linha e o texto */
+  width: 0;
+  height: 2px;
+  background-color: #90ffa0; /* Cor da linha */
+  transition: width 0.3s ease-in-out;
+}
+
 nav ul li a:hover {
-  color: #83ff83;
+  color: #90ffa0; /* Alteração de cor */
+}
+
+nav ul li a:hover::after {
+  width: 100%; /* Expande a linha ao passar o mouse */
 }
 
 .title{
@@ -95,7 +198,7 @@ nav ul li a:hover {
 
 .social-media ul li a {
   text-decoration: none;
-  color: #333;
+  color: #000;
   font-size: 1rem;
   transition: transform 0.2s ease-in-out, color 0.2s;
   display: flex;
@@ -162,7 +265,6 @@ nav ul li a:hover {
   border-radius: 2rem;
 }
 
-
 footer {
   background: #43a117;
   color: #fff;
@@ -174,13 +276,46 @@ footer .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 
-footer .logo-footer {
+footer .footer-up img {
   width: 100px;
-  height: auto;
   border-radius: 10%;
+}
+footer .footer-down img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+footer .linha-separadora {
+  width: 70%;
+  height: 2px;
+  border-radius: 50%;
+  margin: 10px 0;
+  background-color: #fff;
+}
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+.footer-content a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Ajuste a distância entre a linha e o texto */
+  width: 0;
+  height: 2px;
+  background-color: #90ffa0; /* Cor da linha */
+  transition: width 0.3s ease-in-out;
+}
+.footer-content a:hover {
+  color: #90ffa0; /* Alteração de cor */
+}
+
+.footer-content a:hover::after {
+  width: 100%; /* Expande a linha ao passar o mouse */
 }
 
 @media (max-width: 768px) {
