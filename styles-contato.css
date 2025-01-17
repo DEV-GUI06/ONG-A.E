@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -102,10 +107,12 @@ h2:hover {
 }
 
 header nav {
+  max-width: 2000px; 
+  margin: 0 auto; 
+  padding: 0 1rem; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
   position: relative;
 }
 
@@ -116,6 +123,9 @@ header nav .logo-nav {
 }
 
 header {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   background: #43a117;
   color: #fff;
   padding: 1rem 0;
@@ -124,7 +134,7 @@ header {
 nav h1 {
   margin: 0;
   padding: 0;
-  font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+  font-size: 1.5rem; 
 }
 
 nav ul {
@@ -132,6 +142,8 @@ nav ul {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav ul li {
@@ -148,19 +160,19 @@ nav ul li a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px; /* Ajuste a distância entre a linha e o texto */
+  bottom: -3px; 
   width: 0;
   height: 2px;
-  background-color: #90ffa0; /* Cor da linha */
+  background-color: #90ffa0; 
   transition: width 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: #90ffa0; /* Alteração de cor */
+  color: #90ffa0; 
 }
 
 nav ul li a:hover::after {
-  width: 100%; /* Expande a linha ao passar o mouse */
+  width: 100%; 
 }
 
 .title{
@@ -266,6 +278,9 @@ nav ul li a:hover::after {
 }
 
 footer {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   background: #43a117;
   color: #fff;
   text-align: center;
@@ -288,7 +303,7 @@ footer .footer-down img {
 }
 
 footer .linha-separadora {
-  width: 70%;
+  width: 50%;
   height: 2px;
   border-radius: 50%;
   margin: 10px 0;
@@ -304,18 +319,41 @@ footer .linha-separadora {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px; /* Ajuste a distância entre a linha e o texto */
+  bottom: -3px; 
   width: 0;
   height: 2px;
-  background-color: #90ffa0; /* Cor da linha */
+  background-color: #90ffa0; 
   transition: width 0.3s ease-in-out;
 }
 .footer-content a:hover {
-  color: #90ffa0; /* Alteração de cor */
+  color: #90ffa0; 
 }
 
 .footer-content a:hover::after {
-  width: 100%; /* Expande a linha ao passar o mouse */
+  width: 100%; 
+}
+
+/* Media query para telas maiores que 2000px */
+@media (min-width: 2000px) {
+  body {
+    max-width: 2000px;
+    margin: 0 auto; 
+  }
+  header,footer{
+    width: 100vw;
+  }
+
+  #text-controls {
+    position: fixed;
+    right: calc((100% - 2000px) / 2 + 20px); /* Alinha com o layout centralizado */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+
 }
 
 @media (max-width: 768px) {
