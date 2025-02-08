@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
+/* Estilos gerais */
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Estilos para o tema claro e escuro */
 body.light-theme {
   background-color: #f0ffe9;
   color: #000;
@@ -38,7 +40,6 @@ body.dark-theme {
     background-color: #a0e782;
   }
 }
-
 #theme-toggle-container {
   display: flex;
   justify-content: flex-end;
@@ -56,14 +57,12 @@ body.dark-theme {
   color: #1f6100;
   transition: color 0.3s ease;
 }
-
 body.light-theme #theme-toggle-container p {
   color: #1f6100;
 }
 body.dark-theme #theme-toggle-container p {
   color: #c6ffc3;
 }
-
 #theme-toggle {
   background-color: #1f6100;
   border: none;
@@ -75,32 +74,30 @@ body.dark-theme #theme-toggle-container p {
   transition: transform 0.3s ease;
   font-size: 30px;
 }
-
 #theme-toggle:hover {
   transform: scale(1.1);
 }
 #theme-toggle .sun {
   color: #f9d71c;
 }
-
 #theme-toggle .moon {
   color: #c3c3ff;
 }
-
 .icon {
   opacity: 1;
 }
-
 .icon[style*="display: none"] {
   opacity: 0;
 }
 
+/* Estilo geral para textos */
 p,
 h1,
 h2:hover {
   transition: 0.3s;
 }
 
+/* Estilo para o cabeçalho */
 header nav {
   max-width: 2000px; 
   margin: 0 auto; 
@@ -110,13 +107,11 @@ header nav {
   justify-content: space-between;
   position: relative;
 }
-
 header nav .logo-nav {
   text-align: center;
   width: 60px;
   border-radius: 20%;
 }
-
 header {
   position: relative;
   left: 50%;
@@ -125,13 +120,11 @@ header {
   color: #fff;
   padding: 1rem 0;
 }
-
 nav h1 {
   margin: 0;
   padding: 0;
   font-size: 1.5rem; 
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -140,11 +133,9 @@ nav ul {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 nav ul li {
   margin: 0 1rem;
 }
-
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -161,26 +152,23 @@ nav ul li a::after {
   background-color: #90ffa0; 
   transition: width 0.3s ease-in-out;
 }
-
 nav ul li a:hover {
   color: #90ffa0; 
 }
-
 nav ul li a:hover::after {
   width: 100%; 
 }
 
+/* Estilo para o Sobre */
 h1 {
   text-align: center;
 }
-
 .sobre-item {
   display: flex;
   text-align: center;
   margin: 2rem;
   flex-wrap: wrap;
 }
-
 .sobre-item .img {
   width: 100%;
   max-width: 472px;
@@ -191,7 +179,6 @@ h1 {
   max-width: 472px;
   border-radius: 5px;
 }
-
 .sobre-item .texto {
   margin-left: 1rem;
   max-width: 60%;
@@ -215,15 +202,14 @@ h1 {
   transform: scale(1.05);
 }
 
+/* Estilo para o Parceiros */
 #parceiros {
   padding: 50px 20px;
   text-align: center;
 }
-
 #parceiros .texto {
   margin-bottom: 30px;
 }
-
 #parceiros h2 {
   text-align: center;
   padding-top: 2rem;
@@ -233,14 +219,12 @@ h1 {
   margin-left: 10%;
   margin-right: 10%;
 }
-
 #parceiros .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   justify-items: center;
 }
-
 #parceiros .card {
   width: 150px;
   height: 150px;
@@ -273,6 +257,7 @@ h1 {
   margin: 5rem auto;
 }
 
+/* Estilo para o Botões de Texto */
 #text-controls {
   position: fixed;
   top: 85%;
@@ -299,6 +284,7 @@ h1 {
   transform: scale(1.1);
 }
 
+/* Estilo para o Rodapé */
 footer {
   position: relative;
   left: 50%;
@@ -308,13 +294,11 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
-
 footer .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 footer .footer-up img {
   width: 100px;
   border-radius: 10%;
@@ -323,7 +307,6 @@ footer .footer-down img {
   width: 70px;
   border-radius: 50%;
 }
-
 footer .linha-separadora {
   max-width: 1366px;
   width: 50%;

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Estilos gerais */
 * {
   margin: 0;
   padding: 0;
@@ -14,12 +16,13 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Estilos para o tema claro e escuro */
 body.light-theme {
   background-color: #f0ffe9;
   color: #000;
 }
 body.dark-theme {
-  background-color: #0d2a00; /* Cor para o tema escuro */
+  background-color: #0d2a00;
   color: #fff;
   .carousel-button {
     background-color: #beeaab;
@@ -34,7 +37,7 @@ body.dark-theme {
     color: #000;
   }
 }
-
+/* Botao tema */
 #theme-toggle-container {
   display: flex;
   justify-content: flex-end;
@@ -92,12 +95,14 @@ body.dark-theme #theme-toggle-container p {
   opacity: 0;
 }
 
+/* Estilo texto geral*/
 p,
 h1,
 h2:hover {
   transition: 0.3s;
 }
 
+/* Estilo para o cabeçalho */
 header nav {
   max-width: 2000px; 
   margin: 0 auto; 
@@ -166,6 +171,8 @@ nav ul li a:hover {
 nav ul li a:hover::after {
   width: 100%; 
 }
+
+/* Estilo para os projetos de ações */
 #nossas-acoes {
   padding: 20px;
 }
@@ -212,6 +219,7 @@ h2 {
   transition: 0.3s;
 }
 
+/* Estilo para os atividades carrosel */
 #nossas-atividades {
   padding: 20px;
   margin-top: 50px;
@@ -269,7 +277,7 @@ h2 {
   right: 10px;
 }
 
-/* Futuro Terreno */
+/* Estilo par o Futuro Terreno */
 #nosso-futuro {
   display: flex;
   flex-direction: row;
@@ -330,7 +338,6 @@ h2 {
   text-align: center;
   margin-right: 0;
 }
-
 /* Linha vertical */
 .linha-vertical {
   width: 4px;
@@ -340,6 +347,7 @@ h2 {
   border-radius: 8px;
 }
 
+/* Estilo para os textos de controle */
 #text-controls {
   position: fixed;
   top: 85%;
@@ -366,6 +374,7 @@ h2 {
   transform: scale(1.1);
 }
 
+/* Estilo para o rodapé */
 footer {
   position: relative;
   left: 50%;
@@ -444,6 +453,7 @@ footer .linha-separadora {
   }
 
 }
+/* Media query para telas menores que 768px */
 @media (max-width: 768px) {
   header nav {
     flex-wrap: wrap;
@@ -466,15 +476,15 @@ footer .linha-separadora {
   /* Ajustes no Carousel */
   .carousel-container {
     width: 100%;
-    padding: 0 10px; /* Adicione espaçamento interno */
+    padding: 0 10px; 
   }
 
   .carousel-item img {
-    width: 80%; /* Reduz a largura das imagens */
+    width: 80%; 
   }
 
   .carousel-item p {
-    font-size: 1rem; /* Texto menor */
+    font-size: 1rem; 
   }
 
   .carousel-button {
@@ -484,11 +494,11 @@ footer .linha-separadora {
   }
 
   .carousel-button.prev {
-    left: 10px; /* Ajuste a posição */
+    left: 10px; 
   }
 
   .carousel-button.next {
-    right: 10px; /* Ajuste a posição */
+    right: 10px; 
   }
   #nosso-futuro {
     flex-direction: column;
@@ -502,4 +512,5 @@ footer .linha-separadora {
     margin-top: 10px;
     max-width: 55%;
   }
+
 }
