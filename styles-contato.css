@@ -52,6 +52,8 @@ body.dark-theme {
   z-index: 1000;
 }
 #theme-toggle-container p {
+  position: relative;
+  top: 9px;
   margin-right: 10px;
   font-size: 16px;
   

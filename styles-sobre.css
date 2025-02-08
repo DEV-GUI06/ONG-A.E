@@ -47,6 +47,8 @@ body.dark-theme {
   z-index: 1000;
 }
 #theme-toggle-container p {
+  position: relative;
+  top: 9px;
   margin-right: 10px;
   font-size: 16px;
 
@@ -194,6 +196,23 @@ h1 {
   margin-left: 1rem;
   max-width: 60%;
   text-align: justify;
+}
+.sobre-item h4{
+  margin-top: 10px;
+}
+.sobre-item button{
+  border: none;
+  background-color: #188821;
+  color: white;
+  padding: 8px 10px;
+  margin: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.sobre-item button:hover{
+  background-color: #16751e;
+  transform: scale(1.05);
 }
 
 #parceiros {

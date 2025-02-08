@@ -43,6 +43,8 @@ body.dark-theme {
   z-index: 1000;
 }
 #theme-toggle-container p {
+  position: relative;
+  top: 9px;
   margin-right: 10px;
   font-size: 16px;
   
@@ -212,6 +214,7 @@ h2 {
 
 #nossas-atividades {
   padding: 20px;
+  margin-top: 50px;
 }
 
 #nossas-atividades h2 {
@@ -266,6 +269,34 @@ h2 {
   right: 10px;
 }
 
+/* Futuro Terreno */
+#nosso-futuro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  margin: 0 10px;
+}
+#nosso-futuro .terreno-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#nosso-futuro .text-terreno {
+  max-width: 500px;
+}
+.text-terreno a{
+  color: #000;
+}
+#nosso-futuro img {
+  max-width: 43%;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+
 /* Linha do tempo */
 .linha-do-tempo {
   display: flex;
@@ -276,7 +307,6 @@ h2 {
 .linha-do-tempo h1 {
   margin-top: 10rem;
 }
-
 .linha-item {
   display: flex;
   flex-direction: column;
@@ -284,20 +314,17 @@ h2 {
   justify-content: center;
   margin-bottom: 2rem;
 }
-
 .linha-item img {
   width: 100%;
   max-width: 150px;
   border-radius: 50%;
   margin: 0 1rem;
 }
-
 .linha-item .titulo-direita {
   max-width: 100%;
   text-align: center;
   margin-left: 0;
 }
-
 .linha-item .texto-esquerda {
   max-width: 100%;
   text-align: center;
@@ -462,5 +489,17 @@ footer .linha-separadora {
 
   .carousel-button.next {
     right: 10px; /* Ajuste a posição */
+  }
+  #nosso-futuro {
+    flex-direction: column;
+    text-align: center;
+  }
+  #nosso-futuro .text-terreno {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  #nosso-futuro img {
+    margin-top: 10px;
+    max-width: 55%;
   }
 }
