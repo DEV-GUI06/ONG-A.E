@@ -121,6 +121,7 @@ header {
   padding: 1rem 0;
 }
 nav h1 {
+  font-family: nunito;
   margin: 0;
   padding: 0;
   font-size: 1.5rem; 
@@ -188,6 +189,8 @@ h1 {
   margin-top: 10px;
 }
 .sobre-item button{
+  font-family: montserrat;
+  font-weight: bold;
   border: none;
   background-color: #188821;
   color: white;
